@@ -89,11 +89,7 @@
                                         "optional": ["control", "option", "command"]
                                     }
                                 },
-                                "to": [
-                                    {
-                                        "key_code": "quote"
-                                    }
-                                ],
+                                "to": [{ "key_code": "quote" }],
                                 "type": "basic"
                             }
                         ]
@@ -184,11 +180,7 @@
                                         "optional": ["control", "option", "command"]
                                     }
                                 },
-                                "to": [
-                                    {
-                                        "key_code": "equal_sign"
-                                    }
-                                ],
+                                "to": [{ "key_code": "equal_sign" }],
                                 "type": "basic"
                             }
                         ]
@@ -208,13 +200,7 @@
                                         "type": "device_if"
                                     }
                                 ],
-                                "from": {
-                                    "key_code": "equal_sign",
-                                    "modifiers": {
-                                        "mandatory": ["left_shift"],
-                                        "optional": ["control", "option", "command"]
-                                    }
-                                },
+                                "from": { "key_code": "equal_sign" },
                                 "to": [
                                     {
                                         "key_code": "6",
@@ -241,7 +227,11 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "equal_sign"
+                                    "key_code": "equal_sign",
+                                    "modifiers": {
+                                        "mandatory": ["left_shift"],
+                                        "optional": ["control", "option", "command"]
+                                    }
                                 },
                                 "to": [
                                     {
@@ -254,7 +244,39 @@
                         ]
                     },
                     {
-                        "description": "Change international3 from international3 to |",
+                        "description": "Change shift + international3 to |",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "product_id": 50501,
+                                                "vendor_id": 1133
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "international3",
+                                    "modifiers": {
+                                        "mandatory": ["left_shift"],
+                                        "optional": ["control", "option", "command"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "backslash",
+                                        "modifiers": ["left_shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Change international3 to ¥",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -273,8 +295,8 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "backslash",
-                                        "modifiers": ["left_shift"]
+                                        "key_code": "y",
+                                        "modifiers": ["option"]
                                     }
                                 ],
                                 "type": "basic"
@@ -296,9 +318,7 @@
                                         "type": "device_if"
                                     }
                                 ],
-                                "from": {
-                                    "key_code": "open_bracket"
-                                },
+                                "from": { "key_code": "open_bracket" },
                                 "to": [
                                     {
                                         "key_code": "2",
@@ -331,11 +351,7 @@
                                         "optional": ["control", "option", "command"]
                                     }
                                 },
-                                "to": [
-                                    {
-                                        "key_code": "grave_accent_and_tilde"
-                                    }
-                                ],
+                                "to": [{ "key_code": "grave_accent_and_tilde" }],
                                 "type": "basic"
                             }
                         ]
@@ -355,14 +371,8 @@
                                         "type": "device_if"
                                     }
                                 ],
-                                "from": {
-                                    "key_code": "close_bracket"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "open_bracket"
-                                    }
-                                ],
+                                "from": { "key_code": "close_bracket" },
+                                "to": [{ "key_code": "open_bracket" }],
                                 "type": "basic"
                             }
                         ]
@@ -446,9 +456,7 @@
                                         "type": "device_if"
                                     }
                                 ],
-                                "from": {
-                                    "key_code": "quote"
-                                },
+                                "from": { "key_code": "quote" },
                                 "to": [
                                     {
                                         "key_code": "semicolon",
@@ -506,14 +514,8 @@
                                         "type": "device_if"
                                     }
                                 ],
-                                "from": {
-                                    "key_code": "non_us_pound"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "close_bracket"
-                                    }
-                                ],
+                                "from": { "key_code": "non_us_pound" },
+                                "to": [{ "key_code": "close_bracket" }],
                                 "type": "basic"
                             }
                         ]
@@ -565,14 +567,8 @@
                                         "type": "device_if"
                                     }
                                 ],
-                                "from": {
-                                    "key_code": "international1"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "backslash"
-                                    }
-                                ],
+                                "from": { "key_code": "international1" },
+                                "to": [{ "key_code": "backslash" }],
                                 "type": "basic"
                             }
                         ]
@@ -624,14 +620,8 @@
                                         "type": "device_if"
                                     }
                                 ],
-                                "from": {
-                                    "key_code": "grave_accent_and_tilde"
-                                },
-                                "to": [
-                                    {
-                                        "apple_vendor_top_case_key_code": "keyboard_fn"
-                                    }
-                                ],
+                                "from": { "key_code": "grave_accent_and_tilde" },
+                                "to": [{ "apple_vendor_top_case_key_code": "keyboard_fn" }],
                                 "type": "basic"
                             }
                         ]
@@ -651,9 +641,7 @@
                                         "type": "device_if"
                                     }
                                 ],
-                                "from": {
-                                    "key_code": "home"
-                                },
+                                "from": { "key_code": "home" },
                                 "to": [
                                     {
                                         "key_code": "left_arrow",
@@ -679,9 +667,7 @@
                                         "type": "device_if"
                                     }
                                 ],
-                                "from": {
-                                    "key_code": "end"
-                                },
+                                "from": { "key_code": "end" },
                                 "to": [
                                     {
                                         "key_code": "right_arrow",
@@ -707,9 +693,7 @@
                                         "type": "device_if"
                                     }
                                 ],
-                                "from": {
-                                    "key_code": "japanese_pc_katakana"
-                                },
+                                "from": { "key_code": "japanese_pc_katakana" },
                                 "to": [
                                     {
                                         "key_code": "left_shift",

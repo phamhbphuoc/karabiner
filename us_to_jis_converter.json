@@ -250,17 +250,7 @@
             }
           ],
           "from": {
-            "key_code": "equal_sign",
-            "modifiers": {
-              "mandatory": [
-                "left_shift"
-              ],
-              "optional": [
-                "control",
-                "option",
-                "command"
-              ]
-            }
+            "key_code": "equal_sign"
           },
           "to": [
             {
@@ -290,7 +280,17 @@
             }
           ],
           "from": {
-            "key_code": "equal_sign"
+            "key_code": "equal_sign",
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ],
+              "optional": [
+                "control",
+                "option",
+                "command"
+              ]
+            }
           },
           "to": [
             {
@@ -305,7 +305,47 @@
       ]
     },
     {
-      "description": "Change international3 from international3 to |",
+      "description": "Change shift + international3 to |",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "identifiers": [
+                {
+                  "product_id": 50501,
+                  "vendor_id": 1133
+                }
+              ],
+              "type": "device_if"
+            }
+          ],
+          "from": {
+            "key_code": "international3",
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ],
+              "optional": [
+                "control",
+                "option",
+                "command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "backslash",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Change international3 to ¥",
       "manipulators": [
         {
           "conditions": [
@@ -324,9 +364,9 @@
           },
           "to": [
             {
-              "key_code": "backslash",
+              "key_code": "y",
               "modifiers": [
-                "left_shift"
+                "option"
               ]
             }
           ],
